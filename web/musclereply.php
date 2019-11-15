@@ -78,6 +78,15 @@ else if(strpos($message_text,'仕事') !== false
 	$return_message_text = "じゃあー、300万円の楽だけどクソみたいな他チーム案件と、2000万円のハードだけど身になる案件、どっちがいいっすかね？！";
 
 }
+else if(strpos($message_text,'知らん') !== false
+	|| strpos($message_text,'しらん') !== false 
+	|| strpos($message_text,'知らない') !== false 
+	|| strpos($message_text,'知りません') !== false 
+	|| strpos($message_text,'わかりません') !== false 
+	)
+{
+	$return_message_text = "知らないですか。すぎやまさんみたいに常にアンテナ張っててほしいっすねー！じゃっ、私は打ち合わせがあるので。";
+}
 else if(strpos($message_text,'嫌') !== false
 	|| strpos($message_text,'イヤ') !== false 
 	|| strpos($message_text,'いや') !== false 
