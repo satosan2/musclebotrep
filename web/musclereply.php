@@ -138,7 +138,26 @@ else if(strpos($message_text,'ミーティング') !== false
 {
 	$return_message_text = "じゃあーー、会議は22:30からSkypeでいいっすかね？";
 }
+else if(strpos($message_text,'マッチョ') !== false
+	|| strpos($message_text,'筋') !== false 
+	|| strpos($message_text,'鍛') !== false 
+	)
+{
+	$radnum = rand(1,3);
 
+	switch ($radnum){
+		case 1:
+			$return_message_text = "やはり、体感を鍛えるにはプラックが一番です！";
+			break;
+		case 2:
+			$return_message_text = "ジムは渋谷がおすすめです！地方行くとコナミですかね！！";
+			break;
+		default:
+			$return_message_text = "効率よく鍛えるにはバンピージャンプが一番ですね！！";
+			break;
+	}
+
+}
 else {
 	$radnum = rand(1,5);
 	
