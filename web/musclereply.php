@@ -101,7 +101,7 @@ else if(strpos($message_text,'資料') !== false
 	|| strpos($message_text,'バンクシー') !== false 
 	)
 {
-	$radnum = rand(1,3);
+	$radnum = rand(1,4);
 	
 	switch ($radnum){
 		case 1:
@@ -109,6 +109,9 @@ else if(strpos($message_text,'資料') !== false
 			break;
 		case 2:
 			$return_message_text = "そうじゃないんすよ！バンクシーなんです！！";
+			break;
+		case 3:
+			$return_message_text = "100点満点中、17点ですね！";
 			break;
 		default:
 			$return_message_text = "じゃあ、私が巻き取りますんで！！２ページだけ作っといてください！！";
@@ -196,7 +199,7 @@ else if(strpos($message_text,'マッチョ') !== false
 
 }
 else {
-	$radnum = rand(1,6);
+	$radnum = rand(1,7);
 	
 	switch ($radnum){
 		case 1:
@@ -209,9 +212,12 @@ else {
 			$return_message_text = "「" . $message_text . "」もいいんですけど、「サービスエンジニアリング」ッ、、って知ってますかね？";
 			break;
 		case 4:
-			$return_message_text = "みなさん、たぶん知らないと思うんですけど、「データレイク」ッ、、って知ってますかね？";
+			$return_message_text = "「" . $message_text . "」もいいんですけど、今週末、提案書書くの手伝ってもらえますかね？";
 			break;
 		case 5:
+			$return_message_text = "みなさん、たぶん知らないと思うんですけど、「データレイク」ッ、、って知ってますかね？";
+			break;
+		case 6:
 			$return_message_text = "じゃあー、うまくいったら、ウルフギャングおごりますんで！";
 			break;
 		default:
