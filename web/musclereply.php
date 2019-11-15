@@ -60,7 +60,7 @@ else if(strpos($message_text,'休暇') !== false
 	
 	switch ($radnum){
 		case 1:
-			$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
+			$return_message_text = "お金ほしいですよね！じゃあ、稼働率250%にして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
 			break;
 		case 2:
 			$return_message_text = "私のようにタイムカード上は有給にして、出勤するという技もあります！ハッハッハ！！";
