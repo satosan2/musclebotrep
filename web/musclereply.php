@@ -140,7 +140,7 @@ else if(strpos($message_text,'ミーティング') !== false
 }
 
 else {
-	$radnum = rand(1,4);
+	$radnum = rand(1,5);
 	
 	switch ($radnum){
 		case 1:
@@ -150,7 +150,10 @@ else {
 			$return_message_text = "効率よく鍛えるにはバンピージャンプが一番ですね！！";
 			break;
 		case 3:
-			$return_message_text = "みなさん、たぶん知らないと思うんですけど、「データレイクッ」って知ってますかね？";
+			$return_message_text = "「" . $message_text . "」もいいんですけど、「サービスエンジニアリング」ッ、、って知ってますかね？";
+			break;
+		case 4:
+			$return_message_text = "みなさん、たぶん知らないと思うんですけど、「データレイク」ッ、、って知ってますかね？";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
