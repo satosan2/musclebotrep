@@ -154,6 +154,11 @@ else if(strpos($message_text,'ミーティング') !== false
 {
 	$return_message_text = "じゃあーー、会議は22:30からSkypeでいいっすかね？";
 }
+else if(strpos($message_text,'忙') !== false
+	)
+{
+	$return_message_text = "まあーーー、マグロのように常に全力で動いていないと死んでしまいますので！！";
+}
 else if(strpos($message_text,'遅い') !== false
 	|| strpos($message_text,'遅すぎ') !== false 
 	|| strpos($message_text,'だめです') !== false 
