@@ -36,7 +36,6 @@ if(strpos($message_text,'食') !== false
 }
 else if(strpos($message_text,'金') !== false
 	|| strpos($message_text,'カネ') !== false 
-	|| strpos($message_text,'かね') !== false 
 	|| strpos($message_text,'給与') !== false 
 	|| strpos($message_text,'給料') !== false 
 	|| strpos($message_text,'収入') !== false 
