@@ -25,7 +25,6 @@ if ($text == 'はい') {
   ];
 } else if ($text == 'いいえ') {
   exit;
-}
 } else {
   $response_format_text = [
     "type" => "template",
