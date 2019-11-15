@@ -7,7 +7,7 @@
     "keywords": ["php", "musclebotphp"],
     "env": {
       "LINE_CHANNEL_ACCESS_TOKEN": {
-        "description": "Channel Access Token (LINE developers の Basic information で確認できます)"
+        "description": "rO8tDQXbOolri2uUdAFMNo967NjjTrxgErySpQRgd3NegxoyFf8W/xuo8E4TqG4ZQUqVn8vjZ+uaqvCS/HOKRQsd6zl0fsZbmW4lWiAAJD2CQBOBAe0J9R9WI/mGGHJ9MQb3+0Xukm42Z4QdVuUrjAdB04t89/1O/w1cDnyilFU="
       }
     }
 }
