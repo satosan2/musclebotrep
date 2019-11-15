@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>こちらはLINE Messaging APIのデモサイトです。</title>
+<title>こちらはLINE Messaging APIのMuscleデモサイトです。</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
