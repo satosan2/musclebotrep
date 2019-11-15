@@ -42,6 +42,8 @@ else if(strpos($message_text,'金') !== false
 	|| strpos($message_text,'所得') !== false 
 	|| strpos($message_text,'価値') !== false 
 	|| strpos($message_text,'評価') !== false 
+	|| strpos($message_text,'昇格') !== false 
+	|| strpos($message_text,'プロモーション') !== false 
 	)
 {
 	$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
