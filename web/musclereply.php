@@ -30,6 +30,8 @@ if(strpos($message_text,'食') !== false
 	|| strpos($message_text,'店') !== false 
 	|| strpos($message_text,'お腹') !== false 
 	|| strpos($message_text,'おなか') !== false 
+	|| strpos($message_text,'魚') !== false 
+	|| strpos($message_text,'野菜') !== false 
 	) 
 {
 	$return_message_text = "肉が良いですかね？肉が良いですよね！！じゃあーー、肉でも食いに行きますか！！！";
