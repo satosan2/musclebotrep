@@ -159,6 +159,11 @@ else if(strpos($message_text,'忙') !== false
 {
 	$return_message_text = "まあーーー、マグロのように常に全力で動いていないと死んでしまいますので！！";
 }
+else if(strpos($message_text,'マグロ') !== false
+	)
+{
+	$return_message_text = "「" . $message_text . "」もいいんですけど、「トヨタの生産がなぜい平準化できているか」ッ、、って知ってますかね？";
+}
 else if(strpos($message_text,'遅い') !== false
 	|| strpos($message_text,'遅すぎ') !== false 
 	|| strpos($message_text,'だめです') !== false 
