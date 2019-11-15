@@ -33,7 +33,6 @@ if(strpos($message_text,'食') !== false
 {
 	$return_message_text = "肉が良いですかね？肉が良いですよね！！じゃあーー、肉でも食いに行きますか！！！";
 }
-/*
 else if(strpos($message_text,'金') !== false
 	|| strpos($message_text,'カネ') !== false 
 	|| strpos($message_text,'かね') !== false 
@@ -83,7 +82,6 @@ else if(strpos($message_text,'ミーティング') !== false
 {
 	$return_message_text = "じゃあーー、会議は22:30からSkypeでいいっすかね？";
 }
-*/
 else {
 	$radnum = rand(1,3);
 	
