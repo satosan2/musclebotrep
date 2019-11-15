@@ -164,6 +164,12 @@ else if(strpos($message_text,'失注') !== false
 			$return_message_text = "デロイトと提案内容、金額は一緒でした。PMの差で負けました。ズバリ、あなたには重みがありません！！";
 
 }
+else if( ( strpos($message_text,'ロジカル') !== false &&  strpos($message_text,'ない') !== false )
+	|| ( strpos($message_text,'論理') !== false &&  strpos($message_text,'ない') !== false )
+	)
+{
+	$return_message_text = "理屈じゃないんですよ！！バンクシーなんです！！";
+}
 else if(strpos($message_text,'ミーティング') !== false
 	|| strpos($message_text,'会議') !== false 
 	|| strpos($message_text,'打合') !== false 
@@ -214,7 +220,7 @@ else if(strpos($message_text,'マッチョ') !== false
 
 }
 else {
-	$radnum = rand(1,9);
+	$radnum = rand(1,10);
 	
 	switch ($radnum){
 		case 1:
@@ -240,6 +246,9 @@ else {
 			break;
 		case 8:
 			$return_message_text = "まあー、目指しているのはイーロン・マスクですねー！";
+			break;
+		case 9:
+			$return_message_text = "昔は「泣かぬなら殺してしまえ」の信長タイプでしたが、今は家康です！！";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
