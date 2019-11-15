@@ -27,21 +27,76 @@ if(strpos($message_text,'食') !== false
 	|| strpos($message_text,'めし') !== false 
 	|| strpos($message_text,'おごり') !== false 
 	|| strpos($message_text,'店') !== false 
+	|| strpos($message_text,'お腹') !== false 
+	|| strpos($message_text,'おなか') !== false 
 	) 
 {
 	$return_message_text = "肉が良いですかね？肉が良いですよね！！じゃあーー、肉でも食いに行きますか！！！";
 }
 else if(strpos($message_text,'金') !== false
+	|| strpos($message_text,'カネ') !== false 
+	|| strpos($message_text,'かね') !== false 
 	|| strpos($message_text,'給与') !== false 
 	|| strpos($message_text,'給料') !== false 
 	|| strpos($message_text,'収入') !== false 
-	|| strpos($message_text,'所得」') !== false 
+	|| strpos($message_text,'所得') !== false 
+	|| strpos($message_text,'価値') !== false 
+	|| strpos($message_text,'評価') !== false 
 	)
 {
 	$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
 
-} else {
-	$return_message_text = "仕事の報酬は仕事です！";
+}
+else if(strpos($message_text,'嫌') !== false
+	|| strpos($message_text,'イヤ') !== false 
+	|| strpos($message_text,'いや') !== false 
+	)
+{
+	$return_message_text = "わがままだなぁ。。わがまますぎる！！";
+
+}
+else if(strpos($message_text,'資料') !== false
+	|| strpos($message_text,'レビュー') !== false 
+	|| strpos($message_text,'バンクシー') !== false 
+	)
+{
+	$radnum = rand(1,3);
+	
+	switch ($randnum){
+		case 1:
+			$return_message_text = "前から言おうと思っていたけど、あんたの資料はExcelみたいなんだよ！！";
+			break;
+		case 2:
+			$return_message_text = "そうじゃないんすよ！バンクシーなんです！！";
+			break;
+		default
+			$return_message_text = "じゃあ、私が巻き取りますんで！！２ページだけ作っといてください！！";
+			break;
+	}
+
+}
+else if(strpos($message_text,'ミーティング') !== false
+	|| strpos($message_text,'会議') !== false 
+	|| strpos($message_text,'打合せ') !== false 
+	)
+{
+	$return_message_text = "じゃあーー、会議は22:30からSkypeでいいっすかね？";
+
+}
+else {
+	$radnum = rand(1,3);
+	
+	switch ($randnum){
+		case 1:
+			$return_message_text = "仕事の報酬は仕事です！";
+			break;
+		case 2:
+			$return_message_text = "効率よく鍛えるにはバンピージャンプが一番ですね！！";
+			break;
+		default
+			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
+			break;
+	}
 }
 
 
