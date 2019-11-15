@@ -117,8 +117,6 @@ else if(
 	)
 {
 	$return_message_text = "わがままだなぁ。。わがまますぎる！！";
-	}
-
 }
 else if(strpos($message_text,'終わらない') !== false
 	|| strpos($message_text,'終わりません') !== false 
