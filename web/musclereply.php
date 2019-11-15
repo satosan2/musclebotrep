@@ -87,7 +87,17 @@ else if(strpos($message_text,'知らん') !== false
 	|| strpos($message_text,'わかりません') !== false 
 	)
 {
-	$return_message_text = "知らないですか。すぎやまさんみたいに常にアンテナ張っててほしいっすねー！じゃっ、私は打ち合わせがあるので。";
+	$radnum = rand(1,2);
+	
+	switch ($radnum){
+		case 1:
+			$return_message_text = "知らないですか。すぎやまさんみたいに常にアンテナ張っててほしいっすねー！じゃっ、私は打ち合わせがあるので。";
+			break;
+		default:
+			$return_message_text = "ところで、今週末、提案書書くの手伝ってもらえますかね？";
+			break;
+	}
+
 }
 else if(strpos($message_text,'資料') !== false
 	|| strpos($message_text,'レビュー') !== false 
@@ -201,7 +211,7 @@ else if(strpos($message_text,'マッチョ') !== false
 
 }
 else {
-	$radnum = rand(1,7);
+	$radnum = rand(1,8);
 	
 	switch ($radnum){
 		case 1:
@@ -221,6 +231,9 @@ else {
 			break;
 		case 6:
 			$return_message_text = "じゃあー、うまくいったら、ウルフギャングおごりますんで！";
+			break;
+		case 7:
+			$return_message_text = "「" . $message_text . "」もいいんすけど、明後日の提案に向けて、22:30からSkype打ち合わせでいいっすかね？";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
