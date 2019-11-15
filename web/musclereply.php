@@ -131,6 +131,7 @@ else if(strpos($message_text,'終わらない') !== false
 
 }
 else if(strpos($message_text,'失注') !== false
+	|| ( strpos($message_text,'コンペ') !== false &&  strpos($message_text,'負') !== false )
 	)
 {
 			$return_message_text = "デロイトと提案内容、金額は一緒でした。PMの差で負けました。ズバリ、あなたには重みがありません！！";
