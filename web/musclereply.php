@@ -148,7 +148,8 @@ else if(strpos($message_text,'失注') !== false
 }
 else if(strpos($message_text,'ミーティング') !== false
 	|| strpos($message_text,'会議') !== false 
-	|| strpos($message_text,'打合せ') !== false 
+	|| strpos($message_text,'打合') !== false 
+	|| strpos($message_text,'打ち合') !== false 
 	)
 {
 	$return_message_text = "じゃあーー、会議は22:30からSkypeでいいっすかね？";
