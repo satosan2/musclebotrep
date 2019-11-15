@@ -77,6 +77,27 @@ else if(strpos($message_text,'資料') !== false
 	}
 
 }
+else if(strpos($message_text,'終わらない') !== false
+	|| strpos($message_text,'終わりません') !== false 
+	|| strpos($message_text,'できません') !== false 
+	|| strpos($message_text,'できない') !== false 
+	)
+{
+	$radnum = rand(1,3);
+
+	switch ($radnum){
+		case 1:
+			$return_message_text = "ふぅっ、マネージャーに昇格させるんじゃなかったな。";
+			break;
+		case 2:
+			$return_message_text = "わがままだなぁ。。わがまますぎる！！";
+			break;
+		default:
+			$return_message_text = "じゃあ、もう、私が巻き取りますんで！！４ページの一覧だけ作っといてください！！";
+			break;
+	}
+
+}
 else if(strpos($message_text,'ミーティング') !== false
 	|| strpos($message_text,'会議') !== false 
 	|| strpos($message_text,'打合せ') !== false 
