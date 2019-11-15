@@ -49,8 +49,7 @@ else if(strpos($message_text,'金') !== false
 	$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
 
 }
-else if(strpos($message_text,'休暇') !== false
-	|| strpos($message_text,'休み') !== false 
+else if(strpos($message_text,'休') !== false
 	|| strpos($message_text,'有給') !== false 
 	|| strpos($message_text,'残業') !== false 
 	)
@@ -73,6 +72,7 @@ else if(strpos($message_text,'休暇') !== false
 else if(strpos($message_text,'仕事') !== false
 	|| strpos($message_text,'アベ') !== false 
 	|| strpos($message_text,'案件') !== false 
+	|| strpos($message_text,'稼働率') !== false 
 	)
 {
 	$return_message_text = "じゃあー、300万円の楽だけどクソみたいな他チーム案件と、2000万円のハードだけど身になる案件、どっちがいいっすかね？！";
@@ -196,7 +196,7 @@ else if(strpos($message_text,'マッチョ') !== false
 
 }
 else {
-	$radnum = rand(1,5);
+	$radnum = rand(1,6);
 	
 	switch ($radnum){
 		case 1:
@@ -210,6 +210,9 @@ else {
 			break;
 		case 4:
 			$return_message_text = "みなさん、たぶん知らないと思うんですけど、「データレイク」ッ、、って知ってますかね？";
+			break;
+		case 5:
+			$return_message_text = "じゃあー、うまくいったら、ウルフギャングおごりますんで！";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
