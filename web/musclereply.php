@@ -62,7 +62,7 @@ else if(strpos($message_text,'資料') !== false
 {
 	$radnum = rand(1,3);
 	
-	switch ($randnum){
+	switch ($radnum){
 		case 1:
 			$return_message_text = "前から言おうと思っていたけど、あんたの資料はExcelみたいなんだよ！！";
 			break;
@@ -81,12 +81,11 @@ else if(strpos($message_text,'ミーティング') !== false
 	)
 {
 	$return_message_text = "じゃあーー、会議は22:30からSkypeでいいっすかね？";
-
 }
 else {
 	$radnum = rand(1,3);
 	
-	switch ($randnum){
+	switch ($radnum){
 		case 1:
 			$return_message_text = "仕事の報酬は仕事です！";
 			break;
