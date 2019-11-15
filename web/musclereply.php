@@ -83,7 +83,7 @@ else if(strpos($message_text,'ミーティング') !== false
 {
 	$return_message_text = "じゃあーー、会議は22:30からSkypeでいいっすかね？";
 }
-*/
+
 else {
 	$radnum = rand(1,3);
 	
@@ -99,6 +99,7 @@ else {
 			break;
 	}
 }
+*/
 
 
 
