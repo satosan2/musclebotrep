@@ -33,7 +33,6 @@ if(strpos($message_text,'食') !== false
 {
 	$return_message_text = "肉が良いですかね？肉が良いですよね！！じゃあーー、肉でも食いに行きますか！！！";
 }
-/*
 else if(strpos($message_text,'金') !== false
 	|| strpos($message_text,'カネ') !== false 
 	|| strpos($message_text,'かね') !== false 
@@ -70,7 +69,7 @@ else if(strpos($message_text,'資料') !== false
 		case 2:
 			$return_message_text = "そうじゃないんすよ！バンクシーなんです！！";
 			break;
-		default
+		default:
 			$return_message_text = "じゃあ、私が巻き取りますんで！！２ページだけ作っといてください！！";
 			break;
 	}
@@ -94,12 +93,12 @@ else {
 		case 2:
 			$return_message_text = "効率よく鍛えるにはバンピージャンプが一番ですね！！";
 			break;
-		default
+		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
 			break;
 	}
 }
-*/
+
 
 
 
