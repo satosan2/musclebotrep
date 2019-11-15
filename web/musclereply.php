@@ -89,15 +89,6 @@ else if(strpos($message_text,'知らん') !== false
 {
 	$return_message_text = "知らないですか。すぎやまさんみたいに常にアンテナ張っててほしいっすねー！じゃっ、私は打ち合わせがあるので。";
 }
-else if(strpos($message_text,'嫌') !== false
-	|| strpos($message_text,'イヤ') !== false 
-	|| strpos($message_text,'いや') !== false 
-	|| strpos($message_text,'300万') !== false 
-	)
-{
-	$return_message_text = "わがままだなぁ。。わがまますぎる！！";
-
-}
 else if(strpos($message_text,'資料') !== false
 	|| strpos($message_text,'レビュー') !== false 
 	|| strpos($message_text,'バンクシー') !== false 
@@ -121,12 +112,23 @@ else if(strpos($message_text,'資料') !== false
 	}
 
 }
+else if(
+	 strpos($message_text,'300万') !== false 
+	)
+{
+	$return_message_text = "わがままだなぁ。。わがまますぎる！！";
+	}
+
+}
 else if(strpos($message_text,'終わらない') !== false
 	|| strpos($message_text,'終わりません') !== false 
 	|| strpos($message_text,'できません') !== false 
 	|| strpos($message_text,'できない') !== false 
 	|| strpos($message_text,'無理') !== false 
 	|| strpos($message_text,'やれない') !== false 
+	|| strpos($message_text,'嫌') !== false
+	|| strpos($message_text,'イヤ') !== false 
+	|| strpos($message_text,'いや') !== false 
 	)
 {
 	$radnum = rand(1,3);
