@@ -166,6 +166,8 @@ else if(strpos($message_text,'失注') !== false
 }
 else if( ( strpos($message_text,'ロジカル') !== false &&  strpos($message_text,'ない') !== false )
 	|| ( strpos($message_text,'論理') !== false &&  strpos($message_text,'ない') !== false )
+	|| ( strpos($message_text,'論理') !== false &&  strpos($message_text,'崩壊') !== false )
+	|| ( strpos($message_text,'話') !== false &&  strpos($message_text,'変') !== false )
 	)
 {
 	$return_message_text = "理屈じゃないんですよ！！バンクシーなんです！！";
