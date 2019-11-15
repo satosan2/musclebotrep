@@ -81,6 +81,7 @@ else if(strpos($message_text,'仕事') !== false
 else if(strpos($message_text,'嫌') !== false
 	|| strpos($message_text,'イヤ') !== false 
 	|| strpos($message_text,'いや') !== false 
+	|| strpos($message_text,'300万') !== false 
 	)
 {
 	$return_message_text = "わがままだなぁ。。わがまますぎる！！";
