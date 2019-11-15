@@ -49,6 +49,35 @@ else if(strpos($message_text,'金') !== false
 	$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
 
 }
+else if(strpos($message_text,'休暇') !== false
+	|| strpos($message_text,'休み') !== false 
+	|| strpos($message_text,'有給') !== false 
+	|| strpos($message_text,'残業') !== false 
+	)
+{
+	$radnum = rand(1,3);
+	
+	switch ($radnum){
+		case 1:
+			$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
+			break;
+		case 2:
+			$return_message_text = "私のようにタイムカード上は有給にして、出勤するという技もあります！ハッハッハ！！";
+			break;
+		default:
+			$return_message_text = "じゃあ、私が巻き取りますんで！！５２ページだけ作っといてください！！";
+			break;
+	}
+
+}
+else if(strpos($message_text,'仕事') !== false
+	|| strpos($message_text,'アベ') !== false 
+	|| strpos($message_text,'案件') !== false 
+	)
+{
+	$return_message_text = "じゃあー、300万円の楽だけどクソみたいな他チーム案件と、2000万円のハードだけど身になる案件、どっちがいいっすかね？！";
+
+}
 else if(strpos($message_text,'嫌') !== false
 	|| strpos($message_text,'イヤ') !== false 
 	|| strpos($message_text,'いや') !== false 
