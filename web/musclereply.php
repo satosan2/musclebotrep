@@ -211,7 +211,7 @@ else if(strpos($message_text,'マッチョ') !== false
 
 }
 else {
-	$radnum = rand(1,8);
+	$radnum = rand(1,9);
 	
 	switch ($radnum){
 		case 1:
@@ -234,6 +234,9 @@ else {
 			break;
 		case 7:
 			$return_message_text = "「" . $message_text . "」もいいんすけど、明後日の提案に向けて、22:30からSkype打ち合わせでいいっすかね？";
+			break;
+		case 8:
+			$return_message_text = "まあー、目指しているのはイーロン・マスクですねー！";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
