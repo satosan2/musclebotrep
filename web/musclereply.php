@@ -26,6 +26,7 @@ if(strpos($message_text,'食') !== false
 	|| strpos($message_text,'ごはん') !== false 
 	|| strpos($message_text,'めし') !== false 
 	|| strpos($message_text,'おごり') !== false 
+	|| strpos($message_text,'おごって') !== false 
 	|| strpos($message_text,'店') !== false 
 	|| strpos($message_text,'お腹') !== false 
 	|| strpos($message_text,'おなか') !== false 
