@@ -136,7 +136,10 @@ else if(strpos($message_text,'終わらない') !== false
 	|| strpos($message_text,'やれない') !== false 
 	|| strpos($message_text,'嫌') !== false
 	|| strpos($message_text,'イヤ') !== false 
-	|| strpos($message_text,'いや') !== false 
+	|| strpos($message_text,'いや') !== false
+ 	|| strpos($message_text,'やだ') !== false
+	|| strpos($message_text,'ヤダ') !== false
+	|| strpos($message_text,'ムリ') !== false
 	)
 {
 	$radnum = rand(1,3);
