@@ -223,6 +223,12 @@ else if(strpos($message_text,'マッチョ') !== false
 }
 else {
 	$radnum = rand(1,10);
+	$radsbm = rand(0,2);
+	$submes = array(
+		"「サービスエンジニアリング」ッ、、って知ってますかね？",
+		"今週末、提案書書くの手伝ってもらえますかね？",
+		"明後日の提案に向けて、22:30からSkype打ち合わせでいいっすかね？"
+		);
 	
 	switch ($radnum){
 		case 1:
