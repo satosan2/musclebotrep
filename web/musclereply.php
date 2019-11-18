@@ -222,7 +222,7 @@ else if(strpos($message_text,'マッチョ') !== false
 
 }
 else {
-	$radnum = rand(1,10);
+	$radnum = rand(1,8);
 	$radsbm = rand(0,2);
 	$submes = array(
 		"「サービスエンジニアリング」ッ、、って知ってますかね？",
@@ -237,25 +237,26 @@ else {
 		case 2:
 			$return_message_text = "効率よく鍛えるにはバンピージャンプが一番ですね！！";
 			break;
+//		case 3:
+//			$return_message_text = "「" . $message_text . "」もいいんですけど、「サービスエンジニアリング」ッ、、って知ってますかね？";
+//			break;
+//		case 4:
+//			$return_message_text = "「" . $message_text . "」もいいんですけど、今週末、提案書書くの手伝ってもらえますかね？";
+//			break;
 		case 3:
-			$return_message_text = "「" . $message_text . "」もいいんですけど、「サービスエンジニアリング」ッ、、って知ってますかね？";
-			break;
-		case 4:
-			$return_message_text = "「" . $message_text . "」もいいんですけど、今週末、提案書書くの手伝ってもらえますかね？";
-			break;
-		case 5:
 			$return_message_text = "みなさん、たぶん知らないと思うんですけど、「データレイク」ッ、、って知ってますかね？";
 			break;
-		case 6:
+		case 4:
 			$return_message_text = "じゃあー、うまくいったら、ウルフギャングおごりますんで！";
 			break;
-		case 7:
-			$return_message_text = "「" . $message_text . "」もいいんすけど、明後日の提案に向けて、22:30からSkype打ち合わせでいいっすかね？";
+		case 5:
+//			$return_message_text = "「" . $message_text . "」もいいんすけど、明後日の提案に向けて、22:30からSkype打ち合わせでいいっすかね？";
+			$return_message_text = "「" . $message_text . "」もいいんすけど、" . $submes[$radsbm] ;
 			break;
-		case 8:
+		case 6:
 			$return_message_text = "まあー、目指しているのはイーロン・マスクですねー！";
 			break;
-		case 9:
+		case 7:
 			$return_message_text = "昔は「泣かぬなら殺してしまえ」の信長タイプでしたが、今は家康です！！";
 			break;
 		default:
