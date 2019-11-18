@@ -146,9 +146,12 @@ else if(strpos($message_text,'終わらない') !== false
  	|| strpos($message_text,'やだ') !== false
 	|| strpos($message_text,'ヤダ') !== false
 	|| strpos($message_text,'ムリ') !== false
+	|| strpos($message_text,'嫌い') !== false
+	|| strpos($message_text,'きらい') !== false
+	|| strpos($message_text,'キライ') !== false
 	)
 {
-	$radnum = rand(1,3);
+	$radnum = rand(1,4);
 
 	switch ($radnum){
 		case 1:
@@ -156,6 +159,9 @@ else if(strpos($message_text,'終わらない') !== false
 			break;
 		case 2:
 			$return_message_text = "わがままだなぁ。。わがまますぎる！！";
+			break;
+		case 3:
+			$return_message_text = "体・技・心の順番で鍛えればそうは思わないはずです！一緒に鍛えましょう！！";
 			break;
 		default:
 			$return_message_text = "じゃあ、もう、私が巻き取りますんで！！４ページの一覧だけ作っといてください！！";
