@@ -20,7 +20,6 @@ if($message_type != "text") exit;
 
 $return_message_text = "";
 
-
 if(strpos($message_text,'食') !== false
 	|| strpos($message_text,'飯') !== false 
 	|| strpos($message_text,'ごはん') !== false 
@@ -77,7 +76,6 @@ else if(strpos($message_text,'休') !== false
 			$return_message_text = "じゃあ、私が巻き取りますんで！！５２ページだけ作っといてください！！";
 			break;
 	}
-
 }
 else if(strpos($message_text,'仕事') !== false
 	|| strpos($message_text,'アベ') !== false 
@@ -86,7 +84,6 @@ else if(strpos($message_text,'仕事') !== false
 	)
 {
 	$return_message_text = "じゃあー、300万円の楽だけどクソみたいな他チーム案件と、2000万円のハードだけど身になる案件、どっちがいいっすかね？！";
-
 }
 else if(strpos($message_text,'知らん') !== false
 	|| strpos($message_text,'しらん') !== false 
@@ -96,7 +93,6 @@ else if(strpos($message_text,'知らん') !== false
 	)
 {
 	$radnum = rand(1,2);
-	
 	switch ($radnum){
 		case 1:
 			$return_message_text = "知らないですか。すぎやまさんみたいに常にアンテナ張っててほしいっすねー！じゃっ、私は打ち合わせがあるので。";
@@ -105,7 +101,6 @@ else if(strpos($message_text,'知らん') !== false
 			$return_message_text = "ところで、今週末、提案書書くの手伝ってもらえますかね？";
 			break;
 	}
-
 }
 else if(strpos($message_text,'資料') !== false
 	|| strpos($message_text,'レビュー') !== false 
@@ -113,7 +108,6 @@ else if(strpos($message_text,'資料') !== false
 	)
 {
 	$radnum = rand(1,4);
-	
 	switch ($radnum){
 		case 1:
 			$return_message_text = "前から言おうと思っていたけど、あんたの資料はExcelみたいなんだよ！！";
@@ -128,7 +122,6 @@ else if(strpos($message_text,'資料') !== false
 			$return_message_text = "じゃあ、私が巻き取りますんで！！２ページだけ作っといてください！！";
 			break;
 	}
-
 }
 else if(
 	 strpos($message_text,'300万') !== false 
@@ -163,14 +156,12 @@ else if(strpos($message_text,'終わらない') !== false
 			$return_message_text = "じゃあ、もう、私が巻き取りますんで！！４ページの一覧だけ作っといてください！！";
 			break;
 	}
-
 }
 else if(strpos($message_text,'失注') !== false
 	|| ( strpos($message_text,'コンペ') !== false &&  strpos($message_text,'負') !== false )
 	)
 {
 			$return_message_text = "デロイトと提案内容、金額は一緒でした。PMの差で負けました。ズバリ、あなたには重みがありません！！";
-
 }
 else if( ( strpos($message_text,'ロジカル') !== false &&  strpos($message_text,'ない') !== false )
 	|| ( strpos($message_text,'論理') !== false &&  strpos($message_text,'ない') !== false )
@@ -249,7 +240,7 @@ else if(strpos($message_text,'マッチョ') !== false
 	}
 }
 else {
-	$radnum = rand(1,9);
+	$radnum = rand(1,10);
 	$radsbm = rand(0,2);
 	$submes = array(
 		"「サービスエンジニアリング」ッ、、って知ってますかね？",
@@ -288,6 +279,9 @@ else {
 			break;
 		case 8:
 			$return_message_text = "今の仕事、飽きましたかね？飽きましたよね！じゃあーー、面白い仕事しますか！！！";
+			break;
+		case 9:
+			$return_message_text = "これを言うとパワハラになるんですが、今度の土日出勤してもらっていいっすかね！！";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
