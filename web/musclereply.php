@@ -286,7 +286,7 @@ else {
 			$return_message_text = "今の仕事、飽きましたかね？飽きましたよね！じゃあーー、面白い仕事しますか！！！";
 			break;
 		case 9:
-			$return_message_text = "これを言うとパワハラになるんですが、今度の土日出勤してもらっていいっすかね！！";
+			$return_message_text = "これを言うとパワハラになるんですが、今度の土日出勤してもらっていいっすかねー？";
 			break;
 		case 10:
 			$return_message_text = "投げられたボールは必ず拾ってくださいねー！";
