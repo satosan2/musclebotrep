@@ -90,6 +90,11 @@ else if(strpos($message_text,'仕事') !== false
 {
 	$return_message_text = "じゃあー、300万円の楽だけどクソみたいな他チーム案件と、2000万円のハードだけど身になる案件、どっちがいいっすかね？！";
 }
+else if(strpos($message_text,'ゴルフ') !== false
+	)
+{
+	$return_message_text = "じゃあー、次回アイハラ杯のメンツに入れておきますね！";
+}
 else if(strpos($message_text,'知らん') !== false
 	|| strpos($message_text,'しらん') !== false 
 	|| strpos($message_text,'知らない') !== false 
