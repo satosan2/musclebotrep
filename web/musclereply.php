@@ -45,13 +45,18 @@ else if(strpos($message_text,'金') !== false
 	|| strpos($message_text,'評価') !== false 
 	|| strpos($message_text,'昇格') !== false 
 	|| strpos($message_text,'売上') !== false 
+	|| strpos($message_text,'ボーナス') !== false 
+	|| strpos($message_text,'年収') !== false 
 	|| strpos($message_text,'プロモーション') !== false 
 	)
 {
-	$radnum = rand(1,2);
+	$radnum = rand(1,3);
 	switch ($radnum){
 		case 1:
 			$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
+			break;
+		case 2:
+			$return_message_text = "お金ほしいですよね！じゃあー、120％稼働を目指しましょう！ボーナスで還元しますので！！";
 			break;
 		default:
 			$return_message_text = "「" . $message_text . "」といえば、売り上げが異常に低いチームがあり、その援助を私たちがしていると思うと腹が立ちますね！！(服バリバリー)";
@@ -240,7 +245,7 @@ else if(strpos($message_text,'マッチョ') !== false
 	}
 }
 else {
-	$radnum = rand(1,10);
+	$radnum = rand(1,11);
 	$radsbm = rand(0,2);
 	$submes = array(
 		"「サービスエンジニアリング」ッ、、って知ってますかね？",
@@ -282,6 +287,9 @@ else {
 			break;
 		case 9:
 			$return_message_text = "これを言うとパワハラになるんですが、今度の土日出勤してもらっていいっすかね！！";
+			break;
+		case 10:
+			$return_message_text = "投げられたボールは必ず拾ってくださいねー！";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
