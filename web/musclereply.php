@@ -119,7 +119,7 @@ else if(strpos($message_text,'資料') !== false
 			$return_message_text = "100点満点中、17点ですね！";
 			break;
 		default:
-			$return_message_text = "じゃあ、私が巻き取りますんで！！２ページだけ作っといてください！！";
+			$return_message_text = "もう私が巻き取りますんで！！２ページ目だけ作っといてください！！";
 			break;
 	}
 }
