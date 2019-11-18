@@ -45,11 +45,19 @@ else if(strpos($message_text,'金') !== false
 	|| strpos($message_text,'価値') !== false 
 	|| strpos($message_text,'評価') !== false 
 	|| strpos($message_text,'昇格') !== false 
+	|| strpos($message_text,'売上') !== false 
 	|| strpos($message_text,'プロモーション') !== false 
 	)
 {
-	$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
-
+	$radnum = rand(1,2);
+	switch ($radnum){
+		case 1:
+			$return_message_text = "お金ほしいですよね！じゃあ、バリバリ働いてもらって、早くプロモーションして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
+			break;
+		default:
+			$return_message_text = "「" . $message_text . "」といえば、売り上げが異常に低いチームがあり、その援助を私たちがしていると思うと腹が立ちますね！！(服バリバリー)";
+			break;
+	}
 }
 else if(strpos($message_text,'休') !== false
 	|| strpos($message_text,'有給') !== false 
@@ -172,6 +180,26 @@ else if( ( strpos($message_text,'ロジカル') !== false &&  strpos($message_te
 {
 	$return_message_text = "理屈じゃないんですよ！！バンクシーなんです！！";
 }
+else if( ( strpos($message_text,'やめ') !== false &&  strpos($message_text,'たい') !== false )
+	|| ( strpos($message_text,'辞め') !== false  )
+	|| ( strpos($message_text,'退職') !== false  )
+	|| ( strpos($message_text,'転職') !== false )
+	)
+{
+	$radnum = rand(1,3);
+	
+	switch ($radnum){
+		case 1:
+			$return_message_text = "体・技・心の順番で鍛えればそうは思わないはずです！一緒に鍛えましょう！！";
+			break;
+		case 2:
+			$return_message_text = "でも、お金ほしいですよね！じゃあ、稼働率250%にして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
+			break;
+		default:
+			$return_message_text = "そうですか！しかし、うちでは関係が悪くなってやめていった人は一人もいませんよ！！";
+			break;
+	}
+}
 else if(strpos($message_text,'ミーティング') !== false
 	|| strpos($message_text,'会議') !== false 
 	|| strpos($message_text,'打合') !== false 
@@ -219,10 +247,9 @@ else if(strpos($message_text,'マッチョ') !== false
 			$return_message_text = "効率よく鍛えるにはバンピージャンプが一番ですね！！";
 			break;
 	}
-
 }
 else {
-	$radnum = rand(1,8);
+	$radnum = rand(1,9);
 	$radsbm = rand(0,2);
 	$submes = array(
 		"「サービスエンジニアリング」ッ、、って知ってますかね？",
@@ -259,22 +286,14 @@ else {
 		case 7:
 			$return_message_text = "昔は「泣かぬなら殺してしまえ」の信長タイプでしたが、今は家康です！！";
 			break;
+		case 8:
+			$return_message_text = "今の仕事、飽きましたかね？飽きましたよね！じゃあーー、面白い仕事しますか！！！";
+			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
 			break;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // ---------------------------------------------------
 //返信実行
