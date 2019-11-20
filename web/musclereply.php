@@ -256,7 +256,7 @@ else if(strpos($message_text,'マッチョ') !== false
 	}
 }
 else {
-	$radnum = rand(1,11);
+	$radnum = rand(1,12);
 	$radsbm = rand(0,2);
 	$submes = array(
 		"「サービスエンジニアリング」ッ、、って知ってますかね？",
@@ -301,6 +301,9 @@ else {
 			break;
 		case 10:
 			$return_message_text = "投げられたボールは必ず拾ってくださいねー！";
+			break;
+		case 11:
+			$return_message_text = "まあー、ミナミさんのように家族に煙たがられて、仕事に集中できて、ようやく一人前ですね！！";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
