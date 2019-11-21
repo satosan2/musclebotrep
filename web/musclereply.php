@@ -103,13 +103,16 @@ else if(strpos($message_text,'知らん') !== false
 	|| strpos($message_text,'わかりません') !== false 
 	)
 {
-	$radnum = rand(1,3);
+	$radnum = rand(1,4);
 	switch ($radnum){
 		case 1:
 			$return_message_text = "知らないですか。すぎやまさんみたいに常にアンテナ張っててほしいっすねー！じゃっ、私は打ち合わせがあるので。";
 			break;
 		case 2:
 			$return_message_text = "じゃあー、知識の底上げのために１００問テストしますか！私に言ってくれたらご案内しますので！！";
+			break;
+		case 3:
+			$return_message_text = "ところで、昨日たのんでおいた資料、見せてもらえますかね？";
 			break;
 		default:
 			$return_message_text = "ところで、今週末、提案書書くの手伝ってもらえますかね？";
@@ -118,6 +121,8 @@ else if(strpos($message_text,'知らん') !== false
 }
 else if(strpos($message_text,'資料') !== false
 	|| strpos($message_text,'レビュー') !== false 
+	|| strpos($message_text,'どうぞ') !== false 
+	|| strpos($message_text,'見て') !== false 
 	|| strpos($message_text,'バンクシー') !== false 
 	)
 {
@@ -127,13 +132,13 @@ else if(strpos($message_text,'資料') !== false
 			$return_message_text = "前から言おうと思っていたけど、あんたの資料はExcelみたいなんだよ！！";
 			break;
 		case 2:
-			$return_message_text = "そうじゃないんすよ！バンクシーなんです！！";
+			$return_message_text = "そうじゃないんすよ！バンクシーみたいな突き刺さる資料がほしいんです！！";
 			break;
 		case 3:
-			$return_message_text = "100点満点中、17点ですね！";
+			$return_message_text = "この内容じゃあ、100点満点中、17点ですね！";
 			break;
 		default:
-			$return_message_text = "もう私が巻き取りますんで！！２ページ目だけ作っといてください！！";
+			$return_message_text = "んーー、もう私が巻き取りますんで！！２ページ目だけ作っといてください！！";
 			break;
 	}
 }
@@ -184,7 +189,7 @@ else if(strpos($message_text,'失注') !== false
 	|| ( strpos($message_text,'コンペ') !== false &&  strpos($message_text,'負') !== false )
 	)
 {
-			$return_message_text = "デロイトと提案内容、金額は一緒でした。PMの差で負けました。ズバリ、あなたには重みがありません！！";
+		$return_message_text = "デロイトと提案内容、金額は一緒でした。PMの差で負けました。ズバリ、あなたには重みがありません！！";
 }
 else if( ( strpos($message_text,'ロジカル') !== false &&  strpos($message_text,'ない') !== false )
 	|| ( strpos($message_text,'論理') !== false &&  strpos($message_text,'ない') !== false )
@@ -204,7 +209,7 @@ else if( ( strpos($message_text,'やめ') !== false &&  strpos($message_text,'�
 	
 	switch ($radnum){
 		case 1:
-			$return_message_text = "体・技・心の順番で鍛えればそうは思わないはずです！一緒に鍛えましょう！！";
+			$return_message_text = "体・技・心の順番で鍛えればそうは思わないはずです！";
 			break;
 		case 2:
 			$return_message_text = "でも、お金ほしいですよね！じゃあ、稼働率250%にして、いっぱい稼ぎましょう！！1000万円までなら私が何とかできますので！！";
@@ -234,7 +239,7 @@ else if(strpos($message_text,'忙') !== false
 else if(strpos($message_text,'マグロ') !== false
 	)
 {
-	$return_message_text = "「" . $message_text . "」もいいんですけど、「トヨタの生産がなぜい平準化できているか」ッ、、って知ってますかね？";
+	$return_message_text = "「" . $message_text . "」もいいんですけど、「トヨタの生産がなぜ平準化できているか」ッ、、って知ってますかね？";
 }
 else if(strpos($message_text,'遅い') !== false
 	|| strpos($message_text,'遅すぎ') !== false 
