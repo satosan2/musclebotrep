@@ -65,6 +65,7 @@ else if(strpos($message_text,'金') !== false
 }
 else if(strpos($message_text,'休') !== false
 	|| strpos($message_text,'有給') !== false 
+	|| strpos($message_text,'疲') !== false 
 	|| strpos($message_text,'残業') !== false 
 	)
 {
@@ -102,10 +103,13 @@ else if(strpos($message_text,'知らん') !== false
 	|| strpos($message_text,'わかりません') !== false 
 	)
 {
-	$radnum = rand(1,2);
+	$radnum = rand(1,3);
 	switch ($radnum){
 		case 1:
 			$return_message_text = "知らないですか。すぎやまさんみたいに常にアンテナ張っててほしいっすねー！じゃっ、私は打ち合わせがあるので。";
+			break;
+		case 2:
+			$return_message_text = "じゃあー、知識の底上げのために１００問テストしますか！私に言ってくれたらご案内しますので！！";
 			break;
 		default:
 			$return_message_text = "ところで、今週末、提案書書くの手伝ってもらえますかね？";
@@ -156,7 +160,7 @@ else if(strpos($message_text,'終わらない') !== false
 	|| strpos($message_text,'キライ') !== false
 	)
 {
-	$radnum = rand(1,4);
+	$radnum = rand(1,5);
 
 	switch ($radnum){
 		case 1:
@@ -167,6 +171,9 @@ else if(strpos($message_text,'終わらない') !== false
 			break;
 		case 3:
 			$return_message_text = "体・技・心の順番で鍛えればそうは思わないはずです！一緒に鍛えましょう！！";
+			break;
+		case 4:
+			$return_message_text = "不満はお金ですかね？お金ですよね！！じゃあ、稼働率120%にして、いっぱい稼ぎましょう！！";
 			break;
 		default:
 			$return_message_text = "じゃあ、もう、私が巻き取りますんで！！４ページの一覧だけ作っといてください！！";
@@ -256,12 +263,13 @@ else if(strpos($message_text,'マッチョ') !== false
 	}
 }
 else {
-	$radnum = rand(1,12);
+	$radnum = rand(1,14);
 	$radsbm = rand(0,2);
 	$submes = array(
 		"「サービスエンジニアリング」ッ、、って知ってますかね？",
 		"今週末、提案書書くの手伝ってもらえますかね？",
 		"明後日の提案に向けて、22:30からSkype打ち合わせでいいっすかね？"
+		"エッジコンピューティングって知ってますかね？？"
 		);
 	
 	switch ($radnum){
@@ -304,6 +312,12 @@ else {
 			break;
 		case 11:
 			$return_message_text = "まあー、ミナミさんのように家族に煙たがられて、仕事に集中できて、ようやく一人前ですね！！";
+			break;
+		case 12:
+			$return_message_text = "とりあえず、お金は確保できたので、今日・明日でも打ち合わせしてもらっていいでしょうか？";
+			break;
+		case 13:
+			$return_message_text = "カワダさんのわがままは、家庭を優先する人たちよりはまだマシですね！";
 			break;
 		default:
 			$return_message_text = "（バチバチバチ！）ちょっと待ってくださいね！10分後の会議の資料を作っているので！！";
