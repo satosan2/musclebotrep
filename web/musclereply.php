@@ -85,6 +85,8 @@ else if(strpos($message_text,'休') !== false
 }
 else if(strpos($message_text,'仕事') !== false
 	|| strpos($message_text,'アベ') !== false 
+	|| strpos($message_text,'あるの') !== false 
+	|| strpos($message_text,'あるん') !== false 
 	|| strpos($message_text,'案件') !== false 
 	|| strpos($message_text,'稼働率') !== false 
 	)
